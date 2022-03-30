@@ -40,7 +40,7 @@ positionBut.addEventListener("click", ()=>{
     navigator.geolocation.getCurrentPosition((position) => {
         const {coords} = position;
         let url  = document.createElement(`div`);
-        url.innerHTML = `<button class = "map" href="https://yandex.ru/maps/?pt=${coords.longitude},${coords.latitude}&z=18&l=map">посмотреть геолокацию</button>`;
+        url.innerHTML = `<a class = "map" href="https://yandex.ru/maps/?pt=${coords.longitude},${coords.latitude}&z=18&l=map">посмотреть геолокацию</a>`;
         chat.appendChild(url);
     }
 )}
